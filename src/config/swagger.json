@@ -1,0 +1,64 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+        "version" : "1.0.0",
+        "title" : "express-app",
+        "description" : "Api Documentation for learning node and express",
+        "license" : {
+            "name" : "express",
+            "url" : "https://opensource.org/licenses/express"
+        } 
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Users",
+            "description": "API for customers in the system"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/users" : {
+            "post" : {
+                "tags" : [
+                    "users"
+                ],
+                "description": "Create new users in system",
+                "summary": "Create new users.",
+                "parameters": [
+                    {
+                        "name": "Users",
+                        "in": "body",
+                        "description": "Users that we want to create",
+                        "schema": {
+                            "$ref": "#/definitions/Users"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Users is created",
+                        "schema": {
+                            "$ref": "#/definitions/UsersDTO"
+                        }
+                    }
+                }
+            },
+            "put" : {
+                
+            }
+        }    
+    }
+}
