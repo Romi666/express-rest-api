@@ -16,7 +16,7 @@
     "mysql": "^2.18.1",
     "swagger-jsdoc": "^4.0.0",
     "swagger-ui-express": "^4.1.4",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.2.25"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
